@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Node Version
+
+This project is expected to run with `Node.js 14.x`.
+
+If you use `nvm`, run:
+
+```bash
+nvm use
+```
+
+If Node 14 is not installed yet, run:
+
+```bash
+nvm install 14
+nvm use 14
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

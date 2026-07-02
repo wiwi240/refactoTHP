@@ -3,7 +3,7 @@ import { Col, Mentions, Row } from 'antd/es';
 
 
 const MentionsTagsComponent = ({
-	title, type, value, setValue, usersList
+	title, type, value, setValue
 }) => {
 	const onSelect = (val) => {
 		const res = val.substring(0, val.length - 1);
@@ -19,6 +19,7 @@ const MentionsTagsComponent = ({
 				{type === 'mentions' && (
 					<Mentions
 						placeholder="Add space between users"
+						defaultValue={value}
 						onChange={(value) => onSelect(value)}
 					>
 					</Mentions>
