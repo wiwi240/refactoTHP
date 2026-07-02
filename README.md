@@ -45,13 +45,13 @@ Main folders and files:
 
 This project is expected to run with `Node.js 14.x`.
 
-If you use `nvm`, run:
+If `nvm` is not already available in your shell, load it first:
 
 ```bash
-nvm use
+source ~/.nvm/nvm.sh
 ```
 
-If Node 14 is not installed yet, run:
+Then install and use Node 14:
 
 ```bash
 nvm install 14
@@ -60,15 +60,13 @@ nvm use 14
 
 ## Run The Project
 
-Install dependencies:
+Run the project with these commands:
 
 ```bash
-npm install
-```
-
-Start the development server:
-
-```bash
+source ~/.nvm/nvm.sh
+nvm install 14
+nvm use 14
+npm i
 npm start
 ```
 
@@ -76,6 +74,20 @@ Create a production build:
 
 ```bash
 npm run build
+```
+
+## Troubleshooting
+
+If an error still appears after `npm start`, run:
+
+```bash
+npm update
+```
+
+Then try again:
+
+```bash
+npm start
 ```
 
 ## Why This Refactor Matters
